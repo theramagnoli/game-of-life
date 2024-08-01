@@ -7,6 +7,27 @@
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
+		<div style="display: contents" class="main-container">%sveltekit.body%</div>
 	</body>
+	<style>
+		body {
+			font-family: 'Consolas', monospace;
+			background-color: #111;
+			color: #fff;
+			margin: 4rem;
+			margin-bottom: 0;
+		}
+		.main-container {
+			height: 100vh;
+			max-width: 600px;
+		}
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+		input[type='number'] {
+			-moz-appearance: textfield;
+		}
+	</style>
 </html>
